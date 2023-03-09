@@ -372,8 +372,8 @@ a:focus {
 
 @media (max-width: 767.98px) {
     .hero {
-        padding-top: 50vw;
-        padding-bottom: 50vw;
+        padding-top: 60vw;
+        padding-bottom: 60vw;
     }
 
     .hero,
