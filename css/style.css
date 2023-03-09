@@ -256,7 +256,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin-bottom: 45px;
-    padding: 120px 0 0 0;
+    padding: 140px 0 0 0;
     overflow: hidden;
     background: linear-gradient(rgba(44, 17, 21, 0.95), rgba(35, 239, 147, 0.95)), url(../img/hero-bg.jpg);
     background-position: center;
@@ -272,7 +272,7 @@ a:focus {
     position: relative;
     text-align: right;
     padding-right: 75px;
-    margin-bottom: 145px;
+    margin-bottom: 95px;
 }
 
 .hero .hero-image img {
@@ -552,11 +552,24 @@ a:focus {
     margin-top: 15px;
 }
 
-@media (max-width: 991.98px) {
+.image2 {
+    display: none;
+}
+
+@media (max-width: 749px) {
     .about .about-content {
         padding: 45px 15px 0 15px;
     }
+
+    #rainbow {
+        display: none;
+    }
+
+    .image2 {
+        display: block;
+    }
 }
+
 
 
 /*******************************/
@@ -1206,4 +1219,3 @@ a:focus {
         padding: 0 5px;
     }
 }
-
