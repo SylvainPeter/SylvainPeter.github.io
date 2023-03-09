@@ -1,1 +1,1 @@
-﻿# Portfolio Développeur Web - Sylvain Peter, Orléans
+﻿# Portfolio Développeur Web - Sylvain Peter
