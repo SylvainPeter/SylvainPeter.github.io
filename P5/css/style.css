@@ -1,0 +1,505 @@
+/* Polices Artistes */
+@font-face {
+    font-family: 'David-Regular';
+    src: url('../fonts/artists/David-Regular.otf');
+}
+
+@font-face {
+    font-family: 'John-Regular';
+    src: url('../fonts/artists/John-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Kurt-Regular';
+    src: url('../fonts/artists/Kurt-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Leonard-Regular';
+    src: url('../fonts/artists/Leonard-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Serge-Regular';
+    src: url('../fonts/artists/Serge-Regular.otf');
+}
+
+/* Polices Cinema */
+@font-face {
+    font-family: 'BettyNoir';
+    src: url('../fonts/cinema/BettyNoir.ttf');
+}
+
+@font-face {
+    font-family: 'BoogieNightsNF';
+    src: url('../fonts/cinema/BoogieNightsNF.ttf');
+}
+
+@font-face {
+    font-family: 'Budmo';
+    src: url('../fonts/cinema/Budmo.ttf');
+}
+
+@font-face {
+    font-family: 'Deco Pinstripe';
+    src: url('../fonts/cinema/Deco Pinstripe.ttf');
+}
+
+@font-face {
+    font-family: 'GangueOuais';
+    src: url('../fonts/cinema/GangueOuais.ttf');
+}
+
+@font-face {
+    font-family: 'Kino';
+    src: url('../fonts/cinema/Kino.ttf');
+}
+
+@font-face {
+    font-family: 'ManbowLines';
+    src: url('../fonts/cinema/ManbowLines.ttf');
+}
+
+@font-face {
+    font-family: 'ManbowSolid';
+    src: url('../fonts/cinema/ManbowSolid.ttf');
+}
+
+@font-face {
+    font-family: 'MetroRetroNF';
+    src: url('../fonts/cinema/MetroRetroNF.ttf');
+}
+
+@font-face {
+    font-family: 'MiltonBurlesqueNF';
+    src: url('../fonts/cinema/MiltonBurlesqueNF.ttf');
+}
+
+@font-face {
+    font-family: 'ParkLaneNF';
+    src: url('../fonts/cinema/ParkLaneNF.ttf');
+}
+
+@font-face {
+    font-family: 'Portia';
+    src: url('../fonts/cinema/Portia.otf');
+}
+
+@font-face {
+    font-family: 'PortiaAged';
+    src: url('../fonts/cinema/PortiaAged.otf');
+}
+
+@font-face {
+    font-family: 'RaconteurNF';
+    src: url('../fonts/cinema/RaconteurNF.ttf');
+}
+
+@font-face {
+    font-family: 'Schaeffer';
+    src: url('../fonts/cinema/Schaeffer.ttf');
+}
+
+@font-face {
+    font-family: 'Schaeffer';
+    src: url('../fonts/cinema/Schaeffer.ttf');
+}
+
+@font-face {
+    font-family: 'SeasideResortNF';
+    src: url('../fonts/cinema/SeasideResortNF.otf');
+}
+
+@font-face {
+    font-family: 'Showtime';
+    src: url('../fonts/cinema/Showtime.ttf');
+}
+
+@font-face {
+    font-family: 'UndergroundNF';
+    src: url('../fonts/cinema/UndergroundNF.ttf');
+}
+
+/* Polices Circus */
+@font-face {
+    font-family: 'Carnival Rimmed';
+    src: url('../fonts/circus/Carnival Rimmed.ttf');
+}
+
+@font-face {
+    font-family: 'Carnivalee Freakshow';
+    src: url('../fonts/circus/Carnivalee Freakshow.ttf');
+}
+
+@font-face {
+    font-family: 'Circus';
+    src: url('../fonts/circus/Circus.ttf');
+}
+
+@font-face {
+    font-family: 'Circus Ornate';
+    src: url('../fonts/circus/Circus Ornate.ttf');
+}
+
+@font-face {
+    font-family: 'Coney Island';
+    src: url('../fonts/circus/Coney Island.ttf');
+}
+
+@font-face {
+    font-family: 'DS Romantiques';
+    src: url('../fonts/circus/DS Romantiques.ttf');
+}
+
+@font-face {
+    font-family: 'Holtzschue';
+    src: url('../fonts/circus/Holtzschue.ttf');
+}
+
+@font-face {
+    font-family: 'JF Ringmaster';
+    src: url('../fonts/circus/JF Ringmaster.ttf');
+}
+
+@font-face {
+    font-family: 'Pentagon';
+    src: url('../fonts/circus/Pentagon.ttf');
+}
+
+/* Polices Horror */
+@font-face {
+    font-family: 'Bloodlust';
+    src: url('../fonts/horror/Bloodlust.ttf');
+}
+
+@font-face {
+    font-family: 'BurtonsDreams';
+    src: url('../fonts/horror/BurtonsDreams.ttf');
+}
+
+@font-face {
+    font-family: 'Christensen';
+    src: url('../fonts/horror/Christensen.ttf');
+}
+
+@font-face {
+    font-family: 'CloisterBlack';
+    src: url('../fonts/horror/CloisterBlack.ttf');
+}
+
+@font-face {
+    font-family: 'Damned';
+    src: url('../fonts/horror/Damned.ttf');
+}
+
+@font-face {
+    font-family: 'Deutsch Gothic';
+    src: url('../fonts/horror/Deutsch Gothic.ttf');
+}
+
+@font-face {
+    font-family: 'Family';
+    src: url('../fonts/horror/Family.ttf');
+}
+
+@font-face {
+    font-family: 'Halloween Symbols';
+    src: url('../fonts/horror/Halloween Symbols.ttf');
+}
+
+@font-face {
+    font-family: 'Hartwig Schrift';
+    src: url('../fonts/horror/Hartwig Schrift.ttf');
+}
+
+@font-face {
+    font-family: 'Kingdom Heart';
+    src: url('../fonts/horror/Kingdom Heart.ttf');
+}
+
+@font-face {
+    font-family: 'MedievalVictorian1';
+    src: url('../fonts/horror/MedievalVictorian1.ttf');
+}
+
+@font-face {
+    font-family: 'MedievalVictorian2';
+    src: url('../fonts/horror/MedievalVictorian2.ttf');
+}
+
+@font-face {
+    font-family: 'Metal Vampire';
+    src: url('../fonts/horror/Metal Vampire.ttf');
+}
+
+@font-face {
+    font-family: 'Mortified';
+    src: url('../fonts/horror/Mortified.ttf');
+}
+
+@font-face {
+    font-family: 'Portculliard';
+    src: url('../fonts/horror/Portculliard.ttf');
+}
+
+@font-face {
+    font-family: 'Rose Caps';
+    src: url('../fonts/horror/Rose Caps.ttf');
+}
+
+@font-face {
+    font-family: 'Rothenburg Decorative';
+    src: url('../fonts/horror/Rothenburg Decorative.ttf');
+}
+
+@font-face {
+    font-family: 'Zombie';
+    src: url('../fonts/horror/Zombie.ttf');
+}
+
+@font-face {
+    font-family: 'VictorianOrn1';
+    src: url('../fonts/horror/VictorianOrn1.ttf');
+}
+
+@font-face {
+    font-family: 'VictorianOrn2';
+    src: url('../fonts/horror/VictorianOrn2.ttf');
+}
+
+@font-face {
+    font-family: 'Mortified';
+    src: url('../fonts/horror/Mortified.ttf');
+}
+
+/* Polices Pirates */
+@font-face {
+    font-family: 'Aquiline';
+    src: url('../fonts/pirates/Aquiline.ttf');
+}
+
+@font-face {
+    font-family: 'Blackpearl';
+    src: url('../fonts/pirates/Blackpearl.ttf');
+}
+
+@font-face {
+    font-family: 'Black Sams Gold';
+    src: url('../fonts/pirates/BlackSamsGold.ttf');
+}
+
+@font-face {
+    font-family: 'Skulls';
+    src: url('../fonts/pirates/Skulls.ttf');
+}
+
+@font-face {
+    font-family: 'TreasureMap';
+    src: url('../fonts/pirates/TreasureMap.ttf');
+}
+
+/* Polices Western */
+@font-face {
+    font-family: 'Anderson Four';
+    src: url('../fonts/western/Anderson Four.ttf');
+}
+
+@font-face {
+    font-family: 'Durango Western';
+    src: url('../fonts/western/Durango Western.otf');
+}
+
+@font-face {
+    font-family: 'El Durango';
+    src: url('../fonts/western/El Durango.ttf');
+}
+
+@font-face {
+    font-family: 'Fred Wild West';
+    src: url('../fonts/western/Fred Wild West.otf');
+}
+
+@font-face {
+    font-family: 'Ghost Of The Wild West';
+    src: url('../fonts/western/Ghost Of The Wild West.ttf');
+}
+
+@font-face {
+    font-family: 'Nandanka Western';
+    src: url('../fonts/western/Nandanka Western.ttf');
+}
+
+@font-face {
+    font-family: 'Nashville';
+    src: url('../fonts/western/Nashville.ttf');
+}
+
+@font-face {
+    font-family: 'Rio Grande';
+    src: url('../fonts/western/Rio Grande.ttf');
+}
+
+@font-face {
+    font-family: 'Texas Tango';
+    src: url('../fonts/western/Texas Tango.otf');
+}
+
+@font-face {
+    font-family: 'Trocadero';
+    src: url('../fonts/western/Trocadero.ttf');
+}
+
+@font-face {
+    font-family: 'Wild West Icons';
+    src: url('../fonts/western/Wild West Icons.ttf');
+}
+
+@font-face {
+    font-family: 'Wild West USA';
+    src: url('../fonts/western/Wild West USA.ttf');
+}
+
+/* Polices Other */
+@font-face {
+    font-family: 'ArtNouveau';
+    src: url('../fonts/other/ArtNouveau.ttf');
+}
+
+@font-face {
+    font-family: 'ArtNouveau1900';
+    src: url('../fonts/other/ArtNouveau1900.ttf');
+}
+
+@font-face {
+    font-family: 'ChaseZenParis';
+    src: url('../fonts/other/ChaseZenParis.ttf');
+}
+
+@font-face {
+    font-family: 'Booster';
+    src: url('../fonts/other/Booster.ttf');
+}
+
+@font-face {
+    font-family: 'BlackDrama';
+    src: url('../fonts/other/BlackDrama.ttf');
+}
+
+@font-face {
+    font-family: 'CaramelCandy';
+    src: url('../fonts/other/CaramelCandy.ttf');
+}
+
+@font-face {
+    font-family: 'DyerArts';
+    src: url('../fonts/other/DyerArts.ttf');
+}
+
+@font-face {
+    font-family: 'CanCan';
+    src: url('../fonts/other/CanCandB_free.ttf');
+}
+
+@font-face {
+    font-family: 'Euphorigenic';
+    src: url('../fonts/other/euphorigenic.ttf');
+}
+
+@font-face {
+    font-family: 'Guimard Metropolitain';
+    src: url('../fonts/other/guimard_metropolitain.ttf');
+}
+
+@font-face {
+    font-family: 'Moulin Rouge';
+    src: url('../fonts/other/MoulinRougeFLF.ttf');
+}
+
+@font-face {
+    font-family: 'Paris Metro';
+    src: url('../fonts/other/PARISME_.TTF');
+}
+
+@font-face {
+    font-family: 'HippieGypsy';
+    src: url('../fonts/other/HippieGypsy.ttf');
+}
+
+@font-face {
+    font-family: 'Magnison Script';
+    src: url('../fonts/other/Magnison Script.ttf');
+}
+
+@font-face {
+    font-family: 'Velcro';
+    src: url('../fonts/other/Velcro.ttf');
+}
+
+@font-face {
+    font-family: 'StripedShadows';
+    src: url('../fonts/other/StripedShadows.ttf');
+}
+
+@font-face {
+    font-family: 'VolumeDealer';
+    src: url('../fonts/other/VolumeDealer.otf');
+}
+
+@font-face {
+    font-family: 'Whisholder';
+    src: url('../fonts/other/Whisholder.otf');
+}
+
+@font-face {
+    font-family: 'Stonecross';
+    src: url('../fonts/other/Stonecross.ttf');
+}
+
+@font-face {
+    font-family: 'Hondurhas';
+    src: url('../fonts/other/Hondurhas.ttf');
+}
+
+@font-face {
+    font-family: 'HungryBeast';
+    src: url('../fonts/other/HungryBeast.ttf');
+}
+
+@font-face {
+    font-family: 'Headster';
+    src: url('../fonts/other/Headster.ttf');
+}
+
+header {
+    height: 100px;
+}
+
+
+.flex {
+    display: flex;
+    width: 1100px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.shadow {
+    text-shadow: 3px 3px 5px grey;
+}
+
+.negative {
+background-color: black;
+color: white;
+}
+

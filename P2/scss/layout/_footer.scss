@@ -1,0 +1,46 @@
+footer {
+    padding: 20px;
+    background-color: $background-color2;
+    color: white;
+
+    @include responsive('small') {
+        padding: 20px 20px 55px 20px;
+    }
+
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+
+        @include responsive('small') {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 10px;
+
+
+    .footer_column {
+        margin-top: -29px;
+    }
+
+    a {
+        display: block;
+        color: white;
+        line-height: 1rem;
+    }
+
+
+    @include responsive('small') {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 47px 0 -12px;
+    }
+}

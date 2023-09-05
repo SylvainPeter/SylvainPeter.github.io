@@ -1,0 +1,27 @@
+button {
+    margin: auto;
+    padding: 16px;
+    font-size: large;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 45px;
+    background-image: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
+    box-shadow: 1px 7px 9px lighten($background-color2, 50);
+    transition: transform 100ms;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(135deg, lighten($secondary-color, 3%) 0%, lighten($primary-color, 3%) 100%);
+    transform: scale(1.04);
+    box-shadow: 1px 7px 9px darken($background-color2, 1%);
+}
+
+#order_button {
+    margin: 40px auto 50px auto;
+    padding: 16px 35px 16px 35px;
+
+    @include responsive('medium') {
+        margin: 60px auto 50px auto;
+    }
+}

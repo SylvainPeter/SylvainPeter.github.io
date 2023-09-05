@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mon éditeur de fontes</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <header class="row">
+            <div>
+                <i id="info" class="fas fa-info-circle" title="Infos" onclick="on()"></i>
+            </div>
+            <div id="overlay" onclick="off()">
+                <div id="text">Mon éditeur de fontes<br>Sylvain Peter, 2021</div>
+            </div>
+        </header>
+        <!-- Menus des polices -->
+        <div class="row">
+            <fieldset class="border p-2">
+                <legend class="w-auto">FONTES</legend>
+                <select class="artists-menu" title="Artistes" v-model="fontFamily">
+                    <option value="" disabled selected>Artistes</option>
+                    <option value="David-Regular">David Bowie ⍟</option>
+                    <option value="John-Regular">John Lennon</option>
+                    <option value="Kurt-Regular">Kurt Cobain ⍟</option>
+                    <option value="Leonard-Regular">Leonard Cohen</option>
+                    <option value="Serge-Regular">Serge Gainsbourg ⍟</option>
+                </select>
+                <select class="circus-menu" title="Cirque" v-model="fontFamily">
+                    <option value="" selected disabled>Cirque</option>
+                    <option value="Carnival Rimmed">Carnival Rimmed (Caps) ⍟</option>
+                    <option value="Carnivalee Freakshow">Carnivalee Freakshow ⍟</option>
+                    <option value="Circus">Circus ⍟</option>
+                    <option value="Circus Ornate">Circus Ornate ⍟</option>
+                    <option value="Coney Island">Coney Island</option>
+                    <option value="DS Romantiques">DS Romantiques</option>
+                    <option value="Holtzschue">Holtzschue</option>
+                    <option value="JF Ringmaster">JF Ringmaster ⍟</option>
+                    <option value="Pentagon">Pentagon</option>
+                </select>
+                <select class="horror-menu" title="Horreur" v-model="fontFamily">
+                    <option value="" selected disabled>Horreur</option>
+                    <optgroup label="Gothique">
+                        <option value="CloisterBlack">Cloister Black ⍟</option>
+                        <option value="Deutsch Gothic">Deutsch Gothic ⍟</option>
+                        <option value="Fraktur">Fraktur</option>
+                        <option value="Hartwig Schrift">Hartwig Schrift</option>
+                    </optgroup>
+                    <optgroup label="Sorcellerie">
+                        <option value="BurtonsDreams">Burton's Dreams ⍟</option>
+                        <option value="Kingdom Heart">Kingdom Heart</option>
+                        <option value="Mortified">Mortified ⍟</option>
+                        <option value="Rothenburg Decorative">Rothenburg Decorative ⍟</option>
+                    </optgroup>
+                    <optgroup label="Slasher">
+                        <option value="Bloodlust">Bloodlust ⍟</option>
+                        <option value="Buffied">Buffied ⍟</option>
+                        <option value="Creepy Blood">Creepy Blood ⍟</option>
+                        <option value="Damned">Damned</option>
+                        <option value="Family">Family ⍟</option>
+                        <option value="Metal Vampire">Metal Vampire</option>
+                        <option value="Rocky">Rocky ⍟</option>
+                        <option value="Zombie">Zombie ⍟</option>
+                    </optgroup>
+                    <optgroup label="Capitales">
+                        <option value="Christensen">Christensen ⍟</option>
+                        <option value="MedievalVictorian1">Medieval White</option>
+                        <option value="MedievalVictorian2">Medieval Black ⍟</option>
+                        <option value="Portculliard">Portculliard (Caps)</option>
+                        <option value="Rose Caps">Rose Caps ⍟</option>
+                    </optgroup>
+                    <optgroup label="Symboles">
+                        <option value="Halloween Symbols">Halloween Symbols</option>
+                        <option value="VictorianOrn1">Victorian Ornements 1</option>
+                        <option value="VictorianOrn2">Victorian Ornements 2</option>
+                    </optgroup>
+                </select>
+                <select class="pirates-menu" title="Pirates" v-model="fontFamily">
+                    <option value="" selected disabled>Pirates</option>
+                    <option value="Aquiline">Aquiline ⍟</option>
+                    <option value="Blackpearl">Blackpearl ⍟</option>
+                    <option value="Black Sams Gold">Black Sams Gold ⍟</option>
+                    <option value="Skulls">Skulls ⍟</option>
+                    <option value="TreasureMap">Treasure Map ⍟</option>
+                </select>
+                <select class="western-menu" title="Western" v-model="fontFamily">
+                    <option value="" selected disabled>Western</option>
+                    <option value="Anderson Four">Anderson Four</option>
+                    <option value="Durango Western">Durango Western ⍟</option>
+                    <option value="El Durango">El Durango ⍟</option>
+                    <option value="Fred Wild West">Fred Wild West</option>
+                    <option value="Ghost Of The Wild West">Ghost Of The Wild West</option>
+                    <option value="Nandanka Western">Nandanka Western ⍟</option>
+                    <option value="Nashville ">Nashville</option>
+                    <option value="Rio Grande">Rio Grande ⍟</option>
+                    <option value="Texas Tango">Texas Tango</option>
+                    <option value="Trocadero">Trocadero</option>
+                    <option value="Wild West USA">Wild West USA ⍟</option>
+                    <optgroup label="Symboles">
+                        <option value="Wild West Icons">Wild West Icons</option>
+                    </optgroup>
+                </select>
+                <select class="cinema-menu" title="Cinéma" v-model="fontFamily">
+                    <option value="" selected disabled>Cinéma</option>
+                    <optgroup label="Art Déco">
+                        <option value="Deco Pinstripe">Deco Pinstripe ⍟</option>
+                        <option value="GangueOuais">Gangue Ouais</option>
+                        <option value="ManbowLines">Manbow Lines ⍟</option>
+                        <option value="ManbowSolid">Manbow Solid</option>
+                        <option value="MetroRetroNF">MetroRetro NF</option>
+                        <option value="ParkLaneNF">ParkLane NF ⍟</option>
+                        <option value="Schaeffer">Schaeffer ⍟</option>
+                        <option value="SeasideResortNF">SeasideResort NF</option>
+                    <optgroup label="Film Noir">
+                        <option value="BettyNoir">BettyNoir</option>
+                        <option value="BoogieNightsNF">BoogieNights NF</option>
+                        <option value="Kino">Kino ⍟</option>
+                        <option value="MiltonBurlesqueNF">MiltonBurlesque NF</option>
+                        <option value="Portia">Portia ⍟</option>
+                        <option value="PortiaAged">PortiaAged</option>
+                        <option value="RaconteurNF">Raconteur NF ⍟</option>
+                    </optgroup>
+                    <optgroup label="Néon">
+                        <option value="Budmo">Budmo Jiggler</option>
+                        <option value="Showtime">Showtime ⍟</option>
+                        <option value="UndergroundNF">Underground NF</option>
+                    </optgroup>
+                </select>
+                <select class="other-menu" title="Divers" v-model="fontFamily">
+                    <option value="" selected disabled>Divers</option>
+                    <optgroup label="Art Nouveau">
+                        <option value="ArtNouveau">Art Nouveau ⍟</option>
+                        <option value="ArtNouveau1900">1900 ⍟</option>
+                        <option value="CanCan">CanCan (Caps) ⍟</option>
+                        <option value="ChaseZenParis">Chase Zen (Caps) ⍟</option>
+                        <option value="DyerArts">DyerArts ⍟</option>
+                        <option value="Euphorigenic">Euphorigenic</option>
+                        <option value="Guimard Metropolitain">Guimard Metropolitain ⍟</option>
+                        <option value="Moulin Rouge">Moulin Rouge</option>
+                        <option value="Paris Metro">Paris Metro ⍟</option>
+                    </optgroup>
+                    <optgroup label="Hippie 70's">
+                        <option value="HippieGypsy">Hippie Gypsy</option>
+                        <option value="VolumeDealer">VolumeDealer</option>
+                    </optgroup>
+                    <optgroup label="Rétro 50's">
+                        <option value="Booster">Booster</option>
+                        <option value="CaramelCandy">Caramel Candy</option>
+                        <option value="Headster">Headster ⍟</option>
+                        <option value="Magnison Script">Magnison Script ⍟</option>
+                        <option value="StripedShadows">Striped Shadows</option>
+                        <option value="Velcro">Velcro ⍟</option>
+                    </optgroup>
+                    <optgroup label="Whisky">
+                        <option value="BlackDrama">Black Drama ⍟</option>
+                        <option value="Hondurhas">Hondurhas ⍟</option>
+                        <option value="HungryBeast">HungryBeast</option>
+                        <option value="Whisholder">Whisholder</option>
+                    </optgroup>
+                    <optgroup label="Autres">
+                        <option value="Stonecross">Stonecross Celtic (Caps)</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </div>
+        <!-- Menu Outils -->
+        <div class="row">
+            <fieldset class="border p-2 col-md-3">
+                <legend class="w-auto">OUTILS</legend>
+                <button class="fas fa-not-equal btn btn-outline-dark btn-sm" id="default" title="Défaut" @click="isBold = false, isItalic = false, isUnderline = false, isShadow = false, isNegative = false, isSepia = false"></button>
+                <button class="fas fa-bold btn btn-outline-dark btn-sm" id="bold" title="Gras" @click="isBold = !isBold"></button>
+                <button class="fas fa-italic btn btn-outline-dark btn-sm" id="italic" title="Italique" @click="isItalic = !isItalic"></button>
+                <button class="fas fa-underline btn btn-outline-dark btn-sm" id="underline" title="Souligné" @click="isUnderline = !isUnderline"></button>
+                <button class="fas fa-sun btn btn-outline-dark btn-sm" id="shadow" title="Ombre" @click="isShadow = !isShadow"></button>
+                <button class="fas fa-meh-blank btn btn-outline-dark btn-sm" id="negative" title="Négatif" @click="isNegative = !isNegative"></button>
+                <button class="fas fa-camera-retro btn btn-outline-dark btn-sm" id="sepia" title="Sépia" @click="isSepia = !isSepia"></button>
+            </fieldset>
+            <!-- Menu Taille -->
+            <fieldset class="border p-2 col-md-3">
+                <legend class="w-auto">TAILLE</legend>
+                <input type="range" min="1" max="8" step="0.25" title="Déplacez le curseur pour modifier la taille du texte" v-model="fontSize">
+            </fieldset>
+            <!-- Menu Couleurs -->
+            <fieldset class="border p-2 col-md-6">
+                <legend class="w-auto">COULEURS</legend>
+                <input type="text" title="Entrez le nom (en anglais) de la couleur du texte" placeholder="Couleur du texte" v-model="textColor">
+                <input type="color" title="Sélectionnez la couleur du texte" v-model="textColor">
+                <input type="text" title="Entrez le nom (en anglais) de la couleur du fond" placeholder="Couleur du fond" v-model="backgroundColor">
+                <input type="color" title="Sélectionnez la couleur du fond" v-model="backgroundColor">
+                <a class="infobulle" title="Mémo couleurs">
+                    <i class="far fa-question-circle infobulle"></i>
+                    <span><img src="public/web_colors.jpg" alt="Couleurs Web" id="webcolors_img"></span>
+                </a>
+            </fieldset>
+            <br>
+        </div>
+        <br>
+        <!-- Zone d'édition du texte -->
+        <div class="row">
+            <div contenteditable="true" id="htmltoimage" :class="myClass" :style="{ fontSize: fontSize + 'rem', fontFamily: fontFamily, color: textColor, backgroundColor : backgroundColor}" title="Entrez votre texte ici" v-model="textContent">{{ textContent }}</div>
+        </div>
+        <br>
+        <button class="fas fa-download btn btn-dark btn-sm" title="Télécharger" onclick="downloadimage()"></i>
+    </div>
+    <script src="https://kit.fontawesome.com/8cb3d4ca6a.js" async></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+// Colors Theme
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color1: #eaeaea;
+$background-lighter: lighten($background-color1, 3.4%);
+$background-color2: #353535;
+
+// Responsive Breakpoints Map
+$breakpoints: (
+    'small': (min-width: 768px),
+    'medium': (min-width: 992px),
+    'large': (min-width: 1020px),
+    'xl': (min-width: 1440px),
+);

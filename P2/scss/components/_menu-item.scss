@@ -1,0 +1,66 @@
+.menu_item {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: padding-right 400ms ease-in-out;
+
+    h4 {
+        margin: 0;
+        font-size: 17px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &:hover {
+        padding-right: 110px;
+
+        .check {
+            transform: translate(-70px);
+        }
+
+        .fa-check-circle {
+            transform: rotate(360deg);
+        }
+    }
+
+    .menu_item--description {
+        width: 78%;
+
+        p {
+            margin: 5px 0 0 0;
+            font-size: 15px;
+            font-weight: 300;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .check {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 26px;
+        border-radius: 0 15px 15px 0;
+        padding: 20px 5px 20px 5px;
+        background-color: $tertiary-color;
+        right: -70px;
+        transition: all 400ms ease-in-out;
+
+        .fa-check-circle {
+            color: white;
+            transition: transform 500ms ease-in-out;
+        }
+    }
+}

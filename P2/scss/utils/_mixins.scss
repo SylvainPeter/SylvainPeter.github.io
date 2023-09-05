@@ -1,0 +1,32 @@
+/// Responsive Breakpoint Manager
+@mixin responsive($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+
+    @if $raw-query {
+        $query: if(type-of($raw-query)=='string',
+                unquote($raw-query),
+                inspect($raw-query));
+
+        @media #{$query} {
+            @content;
+        }
+    }
+
+    @else {
+        @error 'No value found for `#{$breakpoint}`. '
+        +'Please make sure it is defined in `$breakpoints` map.';
+    }
+}
+
+
+@mixin heart_hover_fill {
+    .fas {
+        opacity: 0;
+        color: $secondary-color;
+        transition: opacity 100ms ease-in-out;
+    }
+
+    .fas:hover {
+        opacity: 1;
+    }
+}

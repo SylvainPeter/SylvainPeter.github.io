@@ -1,0 +1,47 @@
+body {
+    background-color: #f0faf9;
+}
+
+header {
+   font-family: 'Calibri';
+}
+
+legend {
+    font-family: 'Calibri';
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Portia';
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.shadow {
+    text-shadow: 3px 3px 5px grey;
+}
+
+.negative {
+    filter: invert(1);
+}
+
+.sepia {
+    filter: sepia(80%);
+}
+
+#final_text {
+    font-size: 1em;
+}

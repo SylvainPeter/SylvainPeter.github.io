@@ -1,0 +1,40 @@
+.infobulle {
+    text-decoration: none;
+    position: relative;
+}
+
+.infobulle span {
+    display: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: black;
+    background-color: #eff1f3;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.infobulle span img {
+    float: left;
+    margin: 0px 8px 8px 0;
+}
+
+.infobulle:hover span {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: -100;
+    z-index: 1000;
+    width: 450px;
+    /* max-width:200px; */
+    min-height: 20px;
+    border: 1px solid black;
+    margin-top: 12px;
+    margin-left: 15px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+#webcolors_img {
+    width: 350px;
+}
