@@ -28,7 +28,7 @@
     z-index: 2;
     background-color: white;
     pointer-events: none;
-    animation: transparency 1.5s forwards;
+    animation: transparency 0.5s forwards;
 }
 
 .loader {
@@ -39,5 +39,5 @@
     border: 5px solid black;
     border-bottom-color: transparent;
     border-radius: 50%;
-    animation: rotation 1s linear 3;
+    animation: rotation 0.5s linear 3;
 }
